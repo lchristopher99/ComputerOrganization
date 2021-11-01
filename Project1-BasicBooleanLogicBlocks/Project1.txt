@@ -1,0 +1,13 @@
+This project should be your own individual work.  In this project you are to implement the following chips
+
+6 point chips
+
+Not And Or Xor Mux DMux Not16 And16 Or16 Mux16
+
+8 point chips
+
+Or8Way Mux4Way16 Mux8Way16 DMux4Way DMux8Way
+
+A chip grade will be based mostly on correctness (The chip passed the test) with about 15% credit given to "Beauty" or simplicity and elegance of the design.
+
+A starter file with stub hdl files and testing files is provided.  Turn in ONLY the hdl files you developed to solve the problems.  These can either be as individual files or in a single zip file attachment.
