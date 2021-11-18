@@ -250,6 +250,8 @@ class Assembler:
                         if len(bin) < 16:
                             bin = '0'*(16-len(bin))+bin
                         outFile.write(bin+'\n')
+                        if self.debug[2]:
+                            print("A:", bin)
                         if self.debug[1]:
                             print("A:", bin)
                             print("current inst:", self.currentInst, "\n", "type:", self.currentType, "\n", "symbol:", symbol, "\n", "address:", address, "\n")
@@ -259,6 +261,8 @@ class Assembler:
                         comp, dest, jump = p.parseCinst(self.currentInst)
                         bin = "111" + c.comp(comp) + c.dest(dest) + c.jump(jump)
                         outFile.write(bin+'\n')
+                        if self.debug[2]:
+                            print("C:", bin)
                         if self.debug[1]:
                             print("C:", bin)
                             print("current inst:", self.currentInst, "\n", "type:", self.currentType, "\n", "dest:", dest, "-", c.dest(dest), "\n", "comp:", comp, "-", c.comp(comp), "\n", "jump:", jump, "-", c.jump(jump), "\n")
