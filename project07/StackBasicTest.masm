@@ -10,7 +10,7 @@ $pushA
 @32
 $pushA
 // Pop 32 off of stack and save D in R10
-$popAD
+$popAD 
 @R10
 M=D
 // Pop 42 off of stack and save A in R9
@@ -26,4 +26,3 @@ M=D
 (HALT)
 @HALT
 0;JMP
-
